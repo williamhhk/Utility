@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Management;
-using Impersonation;
 
 namespace ROOT.CIMV2.Win32
 {
