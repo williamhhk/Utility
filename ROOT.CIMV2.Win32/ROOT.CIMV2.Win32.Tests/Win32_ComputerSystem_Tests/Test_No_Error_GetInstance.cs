@@ -36,6 +36,7 @@ namespace ROOT.CIMV2.Win32.Tests
         [Test]
         public void Test_Win32_ComputerSystem_Error_Manufacturer()
         {
+
             var manufacturer = _system.GetEnumerator().AsEnumerable<ComputerSystem>().Select(i => i.Manufacturer).ToList().FirstOrDefault();
             Assert.AreNotEqual(manufacturer.ToString().ToUpper(), "APPLE");
         }
