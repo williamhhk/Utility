@@ -30,7 +30,7 @@ namespace ROOT.CIMV2.Win32.Tests
         public void Test_Win32_ComputerSystem_No_Error_Manufacturer()
         {
             var manufacturer = _system.GetEnumerator().AsEnumerable<ComputerSystem>().Select(i=>i.Manufacturer).ToList().FirstOrDefault();
-            Assert.AreEqual(manufacturer.ToString().ToUpper(), "TOSHIBA");
+            Assert.AreEqual(manufacturer.ToString().ToUpper(), "DELL INC.");
         }
 
         [Test]
